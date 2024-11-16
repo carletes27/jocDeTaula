@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dades Usuari</title>
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Materialize Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+        <!-- css propis -->
+        <link href="owncss/jocdetaula.css" rel="stylesheet">
+
+        <!-- JAVA SCRIPT -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <!-- Materialize Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+        <script src="js/user.js"></script>
+
+    </head>
+    <body>
+        
+        <nav>
+            <div class="nav-wrapper red lighten-2">
+                <a href="index.html" class="brand-logo">&nbsp;Jocs de taula</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Inici</a></li>
+                    <li><a href="nou-joc.html">Nou joc</a></li>                    
+                    <li><a href="dades-usuari.html">Usuari</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="index.html">Inici</a></li>
+                    <li><a href="nou-joc.html">Nou joc</a></li>                    
+                    <li><a href="dades-usuari.html">Usuari</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid">            
+            <div class="row">                
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12 m8 l8"><h5>Nou usuari</h5></div>
+                    </div>
+                    <form id="fuform" name="fuform">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <label for="user">Usuari</label>
+                                <input type="text" class="validate" name="user"  id="user" placeholder="Usuari" required>
+                            </div>        
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <label for="name">Nom</label>
+                                <input type="text" class="validate" name="name"  id="name" placeholder="Nom" required>
+                            </div>        
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <label for="lastname">Cognom</label>
+                                <input type="text" class="validate" name="lastname"  id="lastname" placeholder="Cognom" required>
+                            </div>        
+                        </div>
+                        <div class="row">
+                            <div class="col s6">
+                                <button class="btn waves-effect waves-light fusubmit" style="float:right;" id="fusubmit" >Desar
+                                    <i class="material-icons right">send</i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+
+        </div>
+    </body>
+</html>
